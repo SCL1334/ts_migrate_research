@@ -8,7 +8,7 @@ function multiply(a, b) {
 }
 
 function getFullName(user) {
-  return `${user.firstName} ${user.lastName}`;
+  return user.firstName  + user.lastName;
 }
 
 module.exports = {

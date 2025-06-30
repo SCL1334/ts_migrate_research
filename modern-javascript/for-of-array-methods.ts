@@ -1,4 +1,3 @@
-// for-of-array-methods.ts
 // 示範傳統 for 迴圈、for...of 迴圈和陣列方法在 TypeScript 型別推斷上的差異。
 
 // 範例 1: 數字陣列
@@ -122,7 +121,7 @@ const numbersToStrings: number[] = [10, 20, 30];
 
 // 傳統 for 迴圈進行轉換：
 // 需要手動宣告結果陣列的型別，否則 TypeScript 會推斷為 any[] 或 (string | number)[] 等較寬鬆的型別。
-const stringsFromForLoop: string[] = []; // 必須明確指定型別
+const stringsFromForLoop : string[] = []; // 必須明確指定型別
 for (let i = 0; i < numbersToStrings.length; i++) {
   const num = numbersToStrings[i]; // TypeScript 推斷: num: number
   stringsFromForLoop.push(String(num)); // TypeScript 檢查 push 的元素型別

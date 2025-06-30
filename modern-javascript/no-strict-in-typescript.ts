@@ -1,11 +1,7 @@
-// no-strict-in-typescript.ts
-// 這個檔案將解釋為什麼在 TypeScript 中通常不需要手動添加 'use strict';。
-// TypeScript 編譯器會根據您的配置自動處理嚴格模式。
-
-// --- 1. 模組化的程式碼 (推薦方式) ---
+// --- 1. 模組化的程式碼 ---
 // 任何包含 `import` 或 `export` 語句的 TypeScript 檔案都會被視為一個模組。
 // 當 TypeScript 編譯器將模組編譯成 JavaScript 時，它會自動在生成的 JavaScript 檔案頂部添加 'use strict';。
-// 這意味著您不需要手動在 .ts 檔案中寫入它。
+// => 不需要手動在 .ts 檔案中寫入它。
 
 // 範例：這是一個模組，因為它有 export 語句。
 export function add(a: number, b: number): number {
@@ -24,7 +20,7 @@ console.log('Module function add(3, 4):', add(3, 4));
 // --- 2. 非模組化的程式碼 (較少見於現代 TypeScript 專案) ---
 // 如果一個 .ts 檔案不包含任何 `import` 或 `export` 語句，它會被視為一個全局腳本。
 // 在這種情況下，TypeScript 是否在生成的 JavaScript 檔案中添加 'use strict';
-// 取決於您的 `tsconfig.json` 中的 `compilerOptions.target` 設定。
+// 取決於 `tsconfig.json` 中的 `compilerOptions.target` 設定。
 // 如果 `target` 設定為 ES5 或更高版本，TypeScript 通常會自動添加。
 
 // 範例：這是一個非模組化的函數 (假設此檔案沒有 import/export)

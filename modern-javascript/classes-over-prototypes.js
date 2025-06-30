@@ -4,7 +4,7 @@
 // 步驟 1: 定義 Animal 建構函式
 function Animal(name) {
   // 實例屬性：每個實例都有自己的 name
-  this.name = name;
+  this.name = name; // 運行時的動態賦值
   console.log(`傳統原型: Animal ${this.name} created.`);
 }
 

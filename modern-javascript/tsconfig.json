@@ -14,7 +14,6 @@
     "./*.js",
     "./*.ts",
     "./ecmascript-modules/**/*.ts",
-    "../ts-check-jsdoc/*.js" // 包含 ts-check-jsdoc 資料夾中的 JavaScript 檔案
   ],
   "exclude": [
     "node_modules"

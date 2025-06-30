@@ -1,4 +1,4 @@
-// @ts-check
+// // @ts-check
 // 這個檔案將展示如何使用 @ts-check 和 JSDoc 在 JavaScript 檔案中實驗 TypeScript。
 // 在 JavaScript 檔案的頂部添加 `// @ts-check` 可以啟用 TypeScript 的型別檢查。
 // 結合 JSDoc 註解，可以為 JavaScript 程式碼添加型別資訊，讓 TypeScript 檢查器理解。
@@ -109,6 +109,6 @@ const invalidOperation = (a, b, c) => a + b + c; // TypeScript 會在這裡發�
 // calculate(1, 2, invalidOperation); // 參數數量不符
 
 // --- 總結 ---
-// 透過在 JavaScript 檔案中使用 `// @ts-check` 和 JSDoc 註解，您可以逐步為現有的 JavaScript 程式碼添加型別資訊。
+// 透過在 JavaScript 檔案中使用 `// @ts-check` 和 JSDoc 註解，可以逐步為現有的 JavaScript 程式碼添加型別資訊。
 // 這使得 TypeScript 能夠在不將檔案完全轉換為 .ts 的情況下，提供有價值的型別檢查和編輯器支援。
 // 這是遷移到 TypeScript 的一個非常實用且低風險的起點。
