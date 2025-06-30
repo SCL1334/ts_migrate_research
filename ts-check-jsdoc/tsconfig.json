@@ -1,0 +1,22 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "allowJs": true,     // 允許 TypeScript 處理 JavaScript 檔案
+    "checkJs": true,     // 啟用對 JavaScript 檔案的型別檢查
+    "noEmit": true,      // 不生成編譯後的 JavaScript 檔案 (因為你只是想檢查，不想編譯)
+    "esModuleInterop": true, // 改善 CommonJS 和 ES Modules 之間的兼容性 (通常建議開啟)
+    "forceConsistentCasingInFileNames": true, // 強制文件名大小寫一致
+    "strict": true,       // 啟用所有嚴格型別檢查選項 (推薦，會發現更多問題)
+    "skipLibCheck": true, // 跳過所有聲明文件 (*.d.ts) 的類型檢查，以提高性能
+    "module": "esnext",   // 你的模組系統 (如果你的 JS 檔案中使用 import/export，則用 'esnext' 或 'commonjs' 取決於你的運行環境)
+    "target": "es2021"    // 目標 JavaScript 版本 (影響編譯後的代碼，即使 noEmit: true，也影響型別推斷)
+  },
+  "include": [
+    "**/*.js",            // 包含所有 .js 檔案進行檢查
+    "**/*.ts"             // 如果你有 .ts 檔案也包含進來
+  ],
+  "exclude": [
+    "node_modules",       // 排除 node_modules 目錄
+    "**/dist"             // 如果有編譯輸出目錄，也排除
+  ]
+}

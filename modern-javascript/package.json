@@ -1,0 +1,19 @@
+{
+  "name": "modern-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrow-functions-over-expressions.js",
+  "scripts": {
+    "build": "tsc",
+    "run-examples": "npm run build && node dist/ecmascript-modules/index.js && node dist/classes-over-prototypes.js && node dist/let-const-over-var.js && node dist/for-of-array-methods.js && node dist/arrow-functions-over-expressions.js && node dist/concise-literals-destructuring.js && node dist/default-function-parameters.js && node dist/async-await-over-promises-callbacks.js && node dist/no-strict-in-typescript.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.0.6",
+    "typescript": "^5.8.3"
+  }
+}
