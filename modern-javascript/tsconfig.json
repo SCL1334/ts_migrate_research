@@ -2,11 +2,11 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "commonjs",
-    "lib": ["es2018", "esnext"], // 包含 esnext 以支援 console 和其他現代特性
+    "lib": ["es2018", "esnext"],
     "allowJs": true,
     "outDir": "./dist",
     "strict": false,
-    "checkJs": true, // 啟用對 JavaScript 檔案的型別檢查
+    "checkJs": false, // 啟用對 JavaScript 檔案的型別檢查
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },

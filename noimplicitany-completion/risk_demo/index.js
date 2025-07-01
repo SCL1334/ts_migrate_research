@@ -3,7 +3,7 @@
 // TypeScript 會隱含地將其視為 'any' 型別。
 function processInput1(input) {
     // 我們假設 input 是一個字串，並呼叫 toUpperCase() 方法。
-    console.log('Input processed:', input.toUpperCase());
+    console.log("Input processed:", input.toUpperCase());
 }
 console.log("--- Risk Demo (模擬 noImplicitAny: false) ---");
 // 第一次呼叫，傳入字串，正常執行。
@@ -19,6 +19,6 @@ try {
 catch (e) {
     console.error("❌ 執行時發生錯誤:", e.message);
 }
-console.log("\n結論：");
-console.log("在 'noImplicitAny: false' 的設定下，編譯器放行了這個潛在的執行時錯誤。");
-console.log("這給人一種虛假的安全感，以為程式碼沒有問題，但風險依然存在。");
+// 結論：
+// 在 'noImplicitAny: false' 的設定下，編譯器放行了這個潛在的執行時錯誤。
+// 這給人一種虛假的安全感，以為程式碼沒有問題，但風險依然存在
